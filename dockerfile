@@ -15,4 +15,4 @@ RUN dotnet build &&\
 
 WORKDIR  /app/app/DotnetTemplate.Web
 
-ENTRYPOINT dotnet run 
+ENTRYPOINT ["dotnet", "run"]
