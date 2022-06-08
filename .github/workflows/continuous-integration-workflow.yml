@@ -37,5 +37,5 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@v4
       with:
         name: josephfernandes14/my-repo 
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ secrets.DOCKER_USERNAME  }}
         password: ${{ secrets.DOCKER_PASSWORD }}
