@@ -38,10 +38,11 @@ jobs:
       with:
         name: josephfernandes14/my-repo 
         username: ${{ secrets.DOCKER_USERNAME  }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: ${{ secrets.DOCKER_PASSWORD  }}
 
   deploy:
     name: Deploy on Heroku
+    if: github.ref_name == 'main'
     needs: build
     runs-on: ubuntu-latest
     steps:
